@@ -1,0 +1,34 @@
+/*Estilos generales*/
+
+body{
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: rgb(3, 3, 116);
+}
+
+/*Nav*/
+
+.nav{
+    background-color: rgba(132, 172, 245, 0.808);
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    align-items: center;
+}
+.nav>a{
+    text-decoration: none;
+}
+
+/*Habitaciones*/
+
+/*Sobre nosotros*/
+
+/*Contacto*/
+
+/*Footer*/
+
+
+
+
