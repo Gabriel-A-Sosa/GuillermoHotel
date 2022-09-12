@@ -5,22 +5,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Guillermo Hotel</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-			crossorigin="anonymous"
-		/>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/room-list.css" />
 		<script
 			src="https://kit.fontawesome.com/bce215eff9.js"
 			crossorigin="anonymous"
 		></script>
+		<script src="./js/room-list.js" defer></script>
 	</head>
 
 	<body>
@@ -37,23 +33,30 @@
 				<a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
 			</div>
 		</nav>
-		<div id="banner">
-			<img src="https://images.adsttc.com/media/images/6202/aa14/28b7/b532/5a1a/ec0a/large_jpg/sumei-skyline-coast-boutique-hotel-gs-design-6.jpg?1644341824"
-				alt="banner">
-	
-			<div class="centrado">
-				<pre>"Me cansé de errarle a la manzana y me vine a vacacionar"
-					-Guillermo Tell
-				</pre>
-			</div>
-	
-		</div>
-		<!--------------Habitaciones--------------->
-		<!-- HTML !-->
-   			<a class="rooms__button" href="./rooms-list.html" role="button"><span class="text">Ver catálogo</span></a>
-		<!--------------Sobre nosotros--------------->
 
-		<main></main>
+		<main>
+			<aside id="filters">
+				<div>
+					<p>Precio</p>
+					<input id="min-price" type="number" placeholder="Mín" />
+					<input id="max-price" type="number" placeholder="Max" />
+					<p>cant. baños:</p>
+					<input id="baths-filter" type="number" />
+					<p>cant. hab:</p>
+					<div>
+						<input id="rooms-filter" type="number" placeholder="simples" />
+						<input id="rooms-filter" type="number" placeholder="dobles" />
+					</div>
+					<div>
+						<input type="checkbox" name="air-conditioner" />
+						<span> climatizador</span>
+					</div>
+				</div>
+				<button id="filter-btn">filtrar</button>
+			</aside>
+			<ul id="rooms-list"></ul>
+		</main>
+
 		<!--------------Footer--------------->
 		<footer>
 			<div>
